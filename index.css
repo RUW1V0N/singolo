@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Lato';
+    src: url("fonts/lato/Lato-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
 /* content styles */
 *,
 *::before,
@@ -77,4 +84,22 @@
 
 /* Slider */
 
+.slider-container {
+    max-width: 1020px;
+    position: relative;
+    margin: auto;
+}
 
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    user-select: none;
+}

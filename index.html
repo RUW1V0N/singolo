@@ -1,36 +1,53 @@
 <!DOCTYPE html>
-<html lang = "en">
-<head>
-	<meta charset = "UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="index.css" />
-	<title>Singolo</title>
-</head>
-<body>
-<div class = "header">
-	<div class = "logo">
-		<a href = "index.html">singolo</a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Singolo</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <a href="index.html">singolo</a>
+      </div>
+      <div class="navigation">
+        <ul class="main-nav">
+          <li class="home">
+            <a href="#">home</a>
+          </li>
+          <li class="services">
+            <a href="#">services</a>
+          </li>
+          <li class="portfolio">
+            <a href="#">portfolio</a>
+          </li>
+          <li class="about">
+            <a href="#">about</a>
+          </li>
+          <li class="contact">
+            <a href="#">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Slider -->
+    <div class="slider-container">
+      <img src="/image/slider/Slider.png" />
+	  <img src="/image/slider/Slider(1).png" />
+	  <img src="/image/slider/Slider(2).png" />
+    </div>
+	<div class="controls">
+		<a class="prev" onclick="plusSlider(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlider(1)">&#10095;</a>
 	</div>
-	<div class="navigation">
-		<ul class = "main-nav">
-			<li class="home">
-				<a href = "#">home</a>
-			</li>
-			<li class="services">
-				<a href = "#">services</a>
-			</li>
-			<li class="portfolio">
-				<a href = "#">portfolio</a>
-			</li>
-			<li class="about">
-				<a href = "#">about</a>
-			</li>
-			<li class="contact">
-				<a href = "#">contact</a>
-			</li>
-		</ul>
+	<div class="click">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
 	</div>
-</div>
-</body>
+  </body>
 </html>
