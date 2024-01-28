@@ -186,6 +186,11 @@ a {
     background-color: #2D303A;
     color: #767E9E;
     border: 1px solid #767E9E;
+    padding: 5px;
+}
+.buttonsWrapperPortfolio .buttonPortfolio:hover{
+    color: #dedede;
+    border: 1px solid #dedede;
 }
 
 .picturesPortfolio{
