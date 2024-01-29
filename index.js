@@ -8,4 +8,4 @@ function mixImg(){
     });
 }
 
-const buttonPortfolio = document.querySelector(".button-wrapper").addEventListener("click", mixImg);
+document.querySelector(".button-wrapper").addEventListener("click", mixImg);

@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Lato';
+    src: url("fonts/lato/Lato-Italic.ttf");
+    font-weight: normal;
+    font-style: italic;
+}
+
 /* content styles */
 *,
 *::before,
@@ -41,7 +48,6 @@
         width: 700px;
     }
 }
-/* 940 820 700 */
 
 a {
     color: inherit;
@@ -91,7 +97,7 @@ a {
     align-items: center;
 }
 
-.main-nav{
+.mainNav{
     display: flex;
     flex-flow: row wrap;
     list-style: disc;
@@ -99,16 +105,16 @@ a {
     font-size: 13px;
 }
 
-.main-nav .main-nav-item{
+.mainNav .mainNavItem{
     padding-left: 10px;
     margin-left: 30px;
 }
 
-.main-nav .home{
+.mainNav .home{
     list-style: none;
 }
 
-.main-nav .home {
+.mainNav .home {
     color: red;
 }
 
@@ -147,7 +153,6 @@ a {
     flex-flow: column wrap;
     align-content: center;
     background-color: #2D303A;
-    ;
 }
 
 .logoPortfolio{
@@ -158,12 +163,16 @@ a {
     color: #767E9E;
 }
 
-.logoPortfolio .firstTitle{
+.logoPortfolio .portfolioTitle{
     size: 30px;
     width: 130px;
     height: 40px;
     color: #666D89;
     margin-bottom: 14px;
+}
+
+.logoPortfolio .portfolioText{
+
 }
 
 .buttonsWrapperPortfolio {
@@ -175,7 +184,7 @@ a {
     height: 22px;
 
 }
-.button-wrapper{
+.buttonWrapper{
     display: flex;
     flex-flow: row wrap;
     gap: 10px;
@@ -193,13 +202,18 @@ a {
     border: 1px solid #dedede;
 }
 
+.buttonsWrapperPortfolio .buttonPortfolio:active{
+    color: #dedede;
+    border: 1px solid red;
+}
+
 .picturesPortfolio{
     display: flex;
     flex-flow: row wrap;
     margin: 18px 40px 74px;
 }
 
-.img-wrapper {
+.imgWrapper {
     display: flex;
     flex-flow: row wrap;
     gap: 20px;
