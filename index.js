@@ -1,5 +1,5 @@
 function mixImg(){
-    const picturesPortfolioContainer = document.querySelector(".picturesPortfolio .img-wrapper");
+    const picturesPortfolioContainer = document.querySelector(".picturesPortfolio .imgWrapper");
     const imgItems = [...document.querySelectorAll(".imgPortfolio")];
     imgItems.sort(() => Math.random() - 0.5);
     picturesPortfolioContainer.innerHTML = "";
@@ -8,4 +8,4 @@ function mixImg(){
     });
 }
 
-document.querySelector(".button-wrapper").addEventListener("click", mixImg);
+document.querySelector(".buttonWrapper").addEventListener("click", mixImg);
