@@ -1,14 +1,21 @@
+function transformClassList(
+  target,
+  focusClassEl,
+  previousFocusedElement,
+  operationType = "toggle"
+) {
+  target.classList[operationType](focusClassEl);
+  previousFocusedElement?.classList.remove(focusClassEl);
+}
+
 function portfolioButtonClickHandler(event) {
-  const buttonsPortfolio = [...document.querySelectorAll(".buttonPortfolio")];
+  const focusClassEl = "focusButtonPortfolio";
+  const previousFocusedElement = document.querySelector(`.${focusClassEl}`);
   const target = event.target;
-  const focusButtonPortfolio = "focusButtonPortfolio";
-  if (target.classList.contains(focusButtonPortfolio)) {
+  if (target.classList.contains(focusClassEl)) {
     return;
   }
-  buttonsPortfolio.forEach((element) => {
-    element.classList.remove(focusButtonPortfolio);
-  });
-  target.classList.add(focusButtonPortfolio);
+  transformClassList(target, focusClassEl, previousFocusedElement, "add");
   mixImg();
 }
 
@@ -29,13 +36,10 @@ document
   .addEventListener("click", portfolioButtonClickHandler);
 
 function selectImage(event) {
-  const imgPortfolio = [...document.querySelectorAll(".focusImgPortfolio")];
+  const focusClassEl = "focusImgPortfolio";
   const target = event.target;
-  const focusImgPortfolio = "focusImgPortfolio";
-  target.classList.toggle(focusImgPortfolio);
-  if (imgPortfolio[0]) {
-    imgPortfolio[0].classList.remove(focusImgPortfolio);
-  }
+  const previousFocusedElement = document.querySelector(`.${focusClassEl}`);
+  transformClassList(target, focusClassEl, previousFocusedElement);
 }
 
 document.querySelector(".imgWrapper").addEventListener("click", selectImage);
