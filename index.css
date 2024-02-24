@@ -121,27 +121,98 @@ a {
   color: var(--red);
 }
 
-/* Slider */
-
-/* .slider-container {
-    max-width: 1020px;
-    position: relative;
-    margin: auto;
+/* Services */
+.containerServices{
+  display: flex;
+  justify-content: center;
+  background-color: var(--WhiteSmoke);
+  border-bottom: 6px solid var(--white);
 }
 
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    user-select: none;
-} */
+.wrapperServices{
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
+.headerTextServices{
+  display: flex;
+  flex-flow: column wrap;
+  margin: 60px 0px;
+  size: 18px;
+}
+
+.headerTextServices .headerText{
+  color: var(--WaikawaGrey);
+  font-size: 30px;
+  margin-bottom: 18px;
+  line-height: 18px;
+}
+
+.headerTextServices .descriptionHeaderText{
+  color: var(--ShipCove);
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.listServices{
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 52px;
+  gap: 20px;
+}
+.listServices .itemServices{
+  display: flex;
+  width: 300px;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.listServices .itemServices .textItemServices{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: start;
+  width: 220px;
+}
+
+.listServices .itemServices .textItemServices .headerTextItemServices{
+  color: var(--WaikawaGrey);
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+.listServices .itemServices .textItemServices .descriptionTextItemServices{
+  color: var(--ShipCove);
+  font-size: 12px;
+  text-align: justify;
+  line-height: 22px;
+}
+
+.listServices .itemServices .iconItemServices{
+  width: 60px;
+  height: 60px;
+  background-size: 100% 100%;
+  background-origin: border-box;
+}
+
+.listServices .itemServices .iconItemServices-1{
+  background-image: url("./image/services/services-item-1.svg");
+}
+.listServices .itemServices .iconItemServices-2{
+  background-image: url("./image/services/services-item-2.svg");
+}
+.listServices .itemServices .iconItemServices-3{
+  background-image: url("./image/services/services-item-3.svg");
+}
+.listServices .itemServices .iconItemServices-4{
+  background-image: url("./image/services/services-item-4.svg");
+}
+.listServices .itemServices .iconItemServices-5{
+  background-image: url("./image/services/services-item-5.svg");
+}
+.listServices .itemServices .iconItemServices-6{
+  background-image: url("./image/services/services-item-6.svg");
+}
 
 /* Portfolio */
 .containerPortfolio {
